@@ -327,11 +327,11 @@
       font-size: 18px;
     }
     
-    .secao-empreendedoras-box {
+    .secao-dicas-box {
       padding: 5px 30px 30px 15px;
     }
 
-    .secao-empreendedoras-box-img {
+    .secao-dicas-box-img {
       width: 65%;
     }
   
@@ -339,11 +339,11 @@
 
   @media (max-width: 1260px) {
 
-    .secao-empreendedoras-box-img {
+    .secao-dicas-box-img {
       width: 80%;
     }
 
-    .secao-empreendedoras-box-descricao {
+    .secao-dicas-box-descricao {
       font-size: 12px;
     }
   }
@@ -355,20 +355,20 @@
       width: 380px;
     }
 
-    .secao-empreendedoras-box {
+    .secao-dicas-box {
       flex-direction: column;
       height: auto;
       padding-right: 0;
       margin-bottom: 5px;
     }
 
-    .secao-empreendedoras-box-img {
+    .secao-dicas-box-img {
       align-self: center;
       height: auto;
       padding-bottom: 50px;
     }
 
-    .secao-empreendedoras-box-descricao {
+    .secao-dicas-box-descricao {
       width: 75%;
       text-align: justify;
       align-self: center;
@@ -446,7 +446,7 @@
       max-width: 55%;
     }
 
-    .secao-empreendedoras {
+    .secao-dicas {
       margin-top: 20px;
     }
   
@@ -469,18 +469,18 @@
       margin-left: -134px;
     }
 
-    .secao-empreendedoras {
+    .secao-dicas {
       align-items: center;
       flex-direction: column;
     }
 
-    .secao-empreendedoras-box {
+    .secao-dicas-box {
       flex-direction: row;
       width: 90%;
       margin-bottom: 50px;
     }
 
-    .secao-empreendedoras-box-img {
+    .secao-dicas-box-img {
       padding-bottom: 0px;
     }
 
@@ -488,7 +488,7 @@
       flex-direction: row-reverse;
     }
 
-    .boxreverse .secao-empreendedoras-box-img {
+    .boxreverse .secao-dicas-box-img {
       padding-right: 0;
       padding-left: 20px;
     }
@@ -496,7 +496,7 @@
     .boxreverse .desc1,
     .boxreverse .desc2,
     .boxreverse .desc3 {
-      text-align: right;
+      text-align: left;
     }
 
     .boxreverse .desc1 p,
@@ -525,7 +525,7 @@
       max-width: 65%;
     }
    
-    .secao-empreendedoras {
+    .secao-dicas {
       padding: 50px 40px 0px 40px;
     }
   
@@ -542,17 +542,17 @@
 
   @media (max-width: 520px) {
 
-    .secao-empreendedoras {
+    .secao-dicas {
       padding: 50px 20px 0px 20px;
     }
 
-    .secao-empreendedoras-box {
+    .secao-dicas-box {
       flex-direction: column;
       margin-bottom: 10px;
       width: 100%;
     }
 
-    .secao-empreendedoras-box-img {
+    .secao-dicas-box-img {
       padding-bottom: 35px;
       padding-left: 0;
       padding-right: 0;
