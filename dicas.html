@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt">
+  
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>EmpreendElas</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!---CSS-->
+    <link rel="stylesheet" href="css/style-dicas.css"/>
+
+    <!-- Fontes -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon-->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./img/9030logo-mobile.ico"/>
+
+    <!--Biblioteca de ícones-->
+    <script
+      src="https://kit.fontawesome.com/797cbd5857.js"
+      crossorigin="anonymous">
+    </script>
+  
+  </head>
+  
+  <body>
+
+      <section class="container-site">
+         
+        <!--Menu principal (com configurações Boostrap)-->
+        
+        <header class="container-menu">
+          
+          <nav id="nav-nav" class="navbar navbar-expand-lg navbar-dark menu-mobile-background">
+            
+            <!-- Logo desktop -->
+            <a href="#"><img class="logo-btn" src="./img/logo-empreendelas-branca.png" alt="Logo"></a>
+            
+            <!-- Logo mobile -->
+            <a href="/index.html"><img class="logo-btn-mobile" src="./img/logo-mobile.png" alt="Logo"></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-secoes" href="/index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-secoes" href="/sobre.html">Sobre</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-secoes" href="/empreendedoras.html">Empreendedoras</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link menu-secoes" href="/podcast.html">Podcast</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link menu-secoes" href="/apoie.html">Apoie</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link menu-secoes" href="/dicas.html">Dicas</a>
+                    </li>
+
+                </ul>
+            
+            </div>
+          
+          </nav>
+
+        </header>
+      
+        <!-- Conteúdo da Home -->
+
+        <section class="container-conteudo">
+   
+          <!-- Dicas Práticas -->
+          <div class="secao-conteudo">
+
+                <div class="secao-conteudo-textos">
+                    <h1 class="titulo-principal">Dicas Práticas</h1>
+                      <p class="secao-conteudo-descricao"> Reunimos algumas <strong>dicas rápidas</strong> e <strong>práticas</strong> importantes para o início de qualquer negócio.</p>
+                    
+                    <div class="secao-conteudo-botao">
+                        <a href="#dicas">
+                            Quero dicas!
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="secao-conteudo-imagem">
+                    <img  class="img0" src="./img/dica0.svg" alt="Mãe arrumando filho para aula"/>
+                </div>
+          </div>
+
+          <!-- Seção de boxes dicas -->
+          <section id="dicas" class="secao-dicas">
+              
+            <!-- #1 -->
+            <div class="secao-dicas-box boxreverse">
+                
+              <div class="Botão secao-dicas-box-img img1">
+                <img src="./img/dica1.svg" alt="Imagem check box">
+              </div>
+
+              <div class="secao-dicas-box-descricao desc1">
+                  <h2>#1 Resiliência</h2>
+                  <p>Sabe aquele negócio de sucesso que nos inspira? Pesquise sua histtória, muitas vezes é necessário errar e recomeçar várias vezes, por isso não desista! Aprenda, levante e siga!</p>
+              </div>
+                <!-- Fim #1 -->              
+
+            </div>
+
+            <!-- #2 -->
+            <div class="secao-dicas-box boxreverse">
+                
+                <div class="secao-dicas-box-img img2">
+                  <img src="./img/dica2.svg" alt="Livros">
+                </div>
+
+                <div class="secao-dicas-box-descricao desc2">
+                    <h2>#2 Conhecimento</h2>
+                    <p>Uma boa empreendedora é interessada e gosta de aprender, afinal, um negócio de sucesso é para o resto da vida e é necessário estar preparada. Separamos alguns sites para inspirá-las.</p>
+                    <button type="button" class="secao-dicas-box-botao" data-toggle="modal" data-target="#ModalMaria">Saiba mais</button>
+                </div>
+
+                  <!--Botão #2-->
+                  <div class="modal fade" id="ModalMaria" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="TituloModalCentralizado">Maria José</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+
+                        <div class="modal-body">
+                    
+                          <div class="secao-dicas-depoimento-desc">
+                            <p>Conteúdo em construção.</p>
+                          </div>
+              
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Fim #2 -->   
+
+            </div>
+
+            <!-- #3 -->
+            <div class="secao-dicas-box boxreverse">
+                
+              <div class="Botão secao-dicas-box-img img1">
+                <img src="./img/dica3.svg" alt="Interrogação">
+              </div>
+
+              <div class="secao-dicas-box-descricao desc1">
+                  <h2>#3 O quê</h2>
+                  <p>Defina o que será seu negócio: um e-commerce, uma empresa logística, uma empresa de desenvolvimento web, ...</p>
+              </div>
+                <!-- Fim #3 -->
+
+            </div>
+
+            <!-- #4 -->
+            <div class="secao-dicas-box boxreverse">
+                
+              <div class="Botão secao-dicas-box-img img1">
+                <img src="./img/dica4.svg" alt="Perfil">
+              </div>
+
+              <div class="secao-dicas-box-descricao desc1">
+                  <h2>#4 Persona</h2>
+                  <p>Para quem? Sabendo quem realmente é seu cliente, fica mais simples ter uma boa relação e desenvolver soluções mais adequadas.</p>
+              </div>
+                <!-- Fim #4 -->
+
+            </div>
+
+            <!-- #5 -->
+            <div class="secao-dicas-box boxreverse">
+                
+              <div class="Botão secao-dicas-box-img img1">
+                <img src="./img/dica5.svg" alt="Exclamação">
+              </div>
+
+              <div class="secao-dicas-box-descricao desc1">
+                  <h2>#5 Solução</h2>
+                  <p>Torne o dia a dia de seu cliente melhor! Um negócio de sucesso é aquele que podemos contar sempre pois descomplica nosso dia.</p>
+              </div>
+                <!-- Fim #5 -->
+
+            </div>
+
+            <!-- #6 -->
+            <div class="secao-dicas-box boxreverse">
+                
+              <div class="Botão secao-dicas-box-img img1">
+                <img src="./img/dica6.svg" alt="Diferencial">
+              </div>
+
+              <div class="secao-dicas-box-descricao desc1">
+                  <h2>#6 Diferencial</h2>
+                  <p>Seu negócio precisa brilhar! Crie algo especial que o destaque do concorrente e torne-o queridinho do mercado, isso é ter vantagem competitiva.</p>
+              </div>
+                <!-- Fim #6 --> 
+
+            </div>
+
+            <!-- Envie seu depoimento/história -->
+            <div class="secao-dicas-depoimento">
+              
+              <p>Quer apoio para um novo projeto?</p>
+              
+              <button type="button" class="secao-dicas-box-botao" data-toggle="modal" data-target="#ExemploModalCentralizado">
+                Envie-nos sua ideia
+              </button>
+
+              <!--Modal do botão-->
+              <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="TituloModalCentralizado">Conte-nos sua história</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+
+                    <div class="modal-body">
+                
+                      <div class="secao-dicas-depoimento-desc">
+                        <p>Envie sua ideia para o email <strong>empreendelas@gmail.com</strong>. Teremos o prazer de ajudá-la aqui no EmpreendElas. Seja inspiração para outras mulheres!</p>
+                      </div>
+          
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- Fim do modal -->
+
+            </div>
+
+          </section>
+
+        </section>
+
+      </section>
+
+      <!-- Footer -->
+      
+      <footer class="container-footer">
+
+        <div class="footer-midias">
+
+          <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
+          <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+          <a href="#"><i class="fab fa-youtube fa-lg"></i></a>
+          <a href="#"><i class="fa fa-envelope fa-lg"></i></a>
+
+        </div>
+        
+        <div class="creditos">
+          <a href="#" data-toggle="modal" data-target="#ModalCreditos"><p>© Créditos</p></a>
+        </div>
+
+            <!--Modal dos Créditos-->
+            <div class="modal fade" id="ModalCreditos" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="TituloModalCentralizado">Quem somos?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+
+                  <div class="modal-body">
+              
+                    <div class="creditos-desc">
+                      <p><b>Esse site foi desenvolvido durante o curso de Front-end ofertado pela <a href="https://www.digitalhouse.com/br/" target="_blank">Digital House</a>, em parceria com Estação Hack, do Facebook. Suas desenvolvedoras são:</b></p>
+                      <ul>
+                        <li>Aline Santos</li>
+                        <li>Leidiane Campos</li>
+                        <li>Mayara Lima</li>
+                        <li>Natalli Paiva</li>
+                        <li>Priscila Netto</li>
+                      </ul>
+                    </div>
+        
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!-- Fim do modal -->          
+
+      </footer>
+
+    <!-- Scripts JS Bootstrap-->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+    <!-- Script JS -->
+    <script src="js/script.js"></script>
+
+  </body>
+</html>
