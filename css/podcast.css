@@ -8,6 +8,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   color: rgb(53, 53, 53);
+  background-color: #f2f2f2
 }
 
 
@@ -20,7 +21,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
   height: 190px;
-  background-color: rgba(192, 99, 120, 0.1);
+  
 }
 
 /*Logo EmpreendElas*/
@@ -63,7 +64,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: row-reverse;    
-  background-color: rgba(192, 99, 120, 0.1);
+  background-color: #f2f2f2;
   padding: 0 80px 40px 40px;   
 }
 
@@ -75,14 +76,30 @@ body {
   display: flex;
   flex-direction: column;   
   padding:10px 50px 10px 50px;
+  color: #5B5B5B;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-shadow: none;
+  text-align: justify;
 }
 
-.descricao p{
-  color: black;
-  font-size: 16px;
-  text-align: justify;
-  font-weight: 300;    
+.descricao strong{
+  color: #c06378;
+  font-weight: 700;
 }
+
+.secao-podcast-textos{
+  color: #5B5B5B;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-shadow: none;
+  text-align: center;
+}
+
 #playlist{
   width: 40%;
 }
@@ -92,39 +109,45 @@ body {
 }
 
 .titulo-chamada{
-  color: #663845;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
   font-size: 30px;
-  font-family: 'Nunito', sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 20px;
+  line-height: 90px;
+  color: #c06378;
+  text-shadow: 1.1em.3em 0.1em #92597823;
   text-align: center;
+  
 }
-.titulo-principal-podcast {
-  color: #663845;
-  font-family: 'Nunito', sans-serif;
-  font-size: 40px;
-  font-weight: bolder;
-  font-style: italic;
-  padding: 10px 0 15px 0;
-  text-transform: uppercase;
-  text-align: center;    
+.titulo-principal-podcast {  
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 90px;
+  color: #c06378;
+  text-shadow: 1.1em.3em 0.1em #92597823;
+  text-align: center;
 }
 
 .chamada-episodios{
   display:flex;    
-  padding: 50px 15px 10px 15px;
-  margin-bottom: 30px;
-  justify-content: center;  
+  padding: 50px 15px 10px 15px;  
+  justify-content: center;
+  background-color: #f2f2f2;  
+}
+
+.texto-chamada{
+  align-self: flex-end;
 }
 
 .container-videos{
-  background-color: rgba(102, 56, 69, 0.3);
+  background-color: rgba(169, 155, 159, 0.5);
   flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
-
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 5em;
 }
 
 #play{
@@ -132,7 +155,7 @@ body {
 }
 
 .texto-chamada{
-  font-size: 40px;
+  font-size: 30px;
   font-family: 'Nunito', sans-serif;
   font-weight: bold;
   text-transform: uppercase;   
@@ -143,7 +166,8 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 20px;      
+  margin-bottom: 20px;
+  padding-top: 20px;      
 }
 
 .div-podcast{
@@ -151,17 +175,18 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(192, 99, 120, 0.3); 
+  background-color: rgba(192, 99, 120, 0.3);  
   margin-bottom: 30px; 
   width: 600px;
   height: 600px;
-  border-radius: 50px;  
+  border-radius: 50px;   
 }
 
 .div-podcast h1{
   padding: 40px 15px 25px 15px;    
   font-size: 18px;
   text-align: center;
+  font-family: "Roboto", sans-serif;
 }
 
 
@@ -169,7 +194,7 @@ body {
   font-size: 16px;
   padding: 20px 70px 20px 70px;
   text-align: justify;
-  color: black;    
+  font-family: "Roboto", sans-serif;     
 }
 
 .div-podcast iframe{
@@ -177,24 +202,24 @@ body {
   height:240px;
 }
 
-.link-canal{    
-  background-color: #c06378;
-  border-radius: 10px;
-  padding: 10px 10px;   
-  text-transform: uppercase;  
-  width: 250px;
-  color: white;
-  text-decoration: none;
-  margin-top: 10px; 
-  text-align: center;   
+.link-canal a{
+    background: #E894A7;
+    border-radius: 25px;
+    color: #FFFFFF;
+    font-family: "Nunito", sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 800;
+    padding: 6px 20px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
 }
 
-.link-canal:hover{ 
-  text-decoration: none;     
-}
-
-.link-canal:visited{
-  color:white
+.link-canal a:hover {
+  background-color: darkgray;
+  padding: 8px 24px 8px 24px;
+  transition: all 0.4s ease;
 }
 
 /*Texto*/
@@ -212,8 +237,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
   display: flex;
-  justify-content: space-between;
-  background-color:rgba(102, 56, 69, 0.3);
+  justify-content: space-between;  
 }
 
 /*Footer_Midias*/
@@ -318,14 +342,6 @@ body {
 
 }
 
-@media (max-width: 1050px) {
-
-  .logo-btn {
-    margin-left: 100px;
-    width: 340px;
-  }
-
-}
 
 /* Netbook */
 
@@ -338,7 +354,7 @@ body {
   }
 
   .logo-btn {
-    margin-left: 50px;
+    margin-left: 200px;
     padding-top: 50px;
     width: 300px;
   }
@@ -385,6 +401,18 @@ body {
     max-width: 56%;
   }
 
+  .info-podcast{
+    flex-direction: column;
+  }
+
+  .chamadas{
+    width: 100%;
+  }
+
+  .descricao{
+    text-align: center;
+  } 
+
  
 
 }
@@ -402,7 +430,7 @@ body {
 
   .logo-btn-mobile {
     display: block;
-    width: 85px;
+    width: 100px;
     margin-left: -134px;
     
   }
@@ -411,22 +439,28 @@ body {
     display:none;
   }
 
+  .info-podcast{
+    padding-bottom: 10px;
+  }
+
   .texto-podcast{
+    background-color: #F2F2F2;
     display: flex;
     flex-direction: column;
-    padding: 20px 45px 20px 45px;           
-    background-color: rgba(192, 99, 120, 0.1);
-}
+    padding: 0px 45px 20px 45px;           
+    color: #5B5B5B;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-shadow: none;    
+  }
 
-.secao-podcast-textos p{
-    padding-bottom: 10px;
-    color: black;
-    font-size: 14px;
-    text-align: justify;    
-}
-
-
-
+  .texto-podcast strong{
+    color: #c06378;
+    font-weight: 700;
+  }
+  
 }
 
 /* Mobile  */
@@ -466,6 +500,11 @@ body {
     padding-right: 0;
     padding-top: 40px;
   }
+
+  .texto-chamada{
+    font-size: 20px;
+    margin:0;
+  }
 }
 
 @media (max-width: 440px) {
@@ -473,12 +512,7 @@ body {
   .container-menu{
     height: 150px;
   }
-
-  .logo-btn-mobile{
-    width: 75px;
-    margin: 0;
-    margin-left: -100px;
-  }
+  
 
   .info-podcast{    
     display: flex;
@@ -498,34 +532,14 @@ body {
   width: 100%;
 }
 
-.titulo-chamada{
-    color: #663845;
-    font-size: 20px;
-    font-family: 'Nunito', sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 20px;
-}
-.titulo-principal-podcast {
-    color: #663845;
-    font-family: 'Nunito', sans-serif;
-    font-size: 30px;
-    font-weight: bolder;
-    font-style: italic;
-    padding: 10px 0 15px 0;
-    text-transform: uppercase;  
-    
-}
+
 
 .chamada-episodios{
   margin: 0;
   padding-top: 25px;
 }
 
-.texto-chamada{
-  font-size: 20px;
-  margin:0;
-}
+
 
 .podcast-videos{
   display: flex;
@@ -564,5 +578,10 @@ body {
   margin-top: 0;
 }
 
+}
 
+@media (max-width: 350px) {
+.texto-chamada{
+  font-size: 15px;
+}
 }
