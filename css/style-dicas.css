@@ -12,51 +12,7 @@
   }
   
   
-  /* ---------------------- INÍCIO HEADER (Menu) ---------------------- */
-  
-  /*Container menu*/
-  .container-menu {
-    background: url("../img/barra-menu-horizontal.svg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 190px;
-  }
-  
-  /*Logo EmpreendElas*/
-  .logo-btn {
-    margin-left: 100px;
-    padding-top: 50px;
-    width: 480px;
-    opacity: .8;
-  }
-  
-  .logo-btn-mobile {
-    display: none;
-  }
-  
-  /*Itens_Menu*/
-  
-  .menu-secoes {
-    font-family: "Nunito", sans-serif;
-    color: white;
-    font-size: 20px;
-    text-align: right;
-  }
-  
-  .menu-secoes a:visited {
-    color: white;
-  }
-  
-  /*Efeito_Menu*/
-  .menu-secoes:hover {
-    padding-top: 5px;
-    transition: all 0.3s ease;
-  }
-  
-  /* ---------------------- FIM HEADER (Menu) ---------------------- */
-  
-  
-  /* ---------------------- INÍCIO CONTEÚDO HOME ---------------------- */
+  /* ---------------------- INÍCIO CONTEÚDO DICAS ---------------------- */
   
   
   /*Container Conteúdo*/
@@ -208,124 +164,19 @@
   }
 
   .secao-dicas-depoimento-desc {
-    color: #5B5B5B;
+    color: #faf1f3;
     font-weight: 400;
     font-size: 14px;
   }
 
-  /* ---------------------- FIM CONTEÚDO HOME ---------------------- */
-  
-  
-  /* ---------------------- INÍCIO FOOTER ---------------------- */
-  
-  
-  /*Footer*/
-  .container-footer {
-    background: url("../img/Retângulo_footer.svg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  /*Footer_Midias*/
-  .footer-midias {
-    color: #f1b8c6;
-    float: left;
-    padding-top: 130px;
-    margin-left: 100px;
-    font-size: 20px;
-    text-align: end;
-  }
-  
-  .fa-envelope,
-  .fa-facebook,
-  .fa-instagram,
-  .fa-youtube {
-    color:  #f1b8c6;
-    padding: 0 20px 0 0;
-  }
-  
-  .fa-facebook:hover,
-  .fa-instagram:hover,
-  .fa-youtube:hover,
-  .fa-envelope:hover {
-    color: #f1b8c6;
-    text-shadow: 0 0 8px #f1b8c6;
-    transition: all 0.4s ease;
-  }
-  
-  /*Footer Créditos*/
-  .creditos {
-    color: #f1b8c6;
-    padding-top: 130px;
-    padding-right: 20px;
-    text-align: end;
-    padding-bottom: 20px;
-  }
-  
-  .creditos a:link,
-  .creditos a:visited {
-    color:  #f1b8c6;
-    text-decoration: none;
-  }
-  
-  .creditos a:hover {
-    color:  #f0d7dd;
-    
-  }
 
-  .creditos-desc {
-    padding: 20px;
-  }
-  
-  .creditos-desc li {
-    list-style: none;
-  }
-  
-  .creditos-desc a {
-    color: #8b4e5e;
-    text-decoration: none;
-  }
-  
-  .creditos-desc a:hover{
-    color: #5B5B5B;
-  }
-  
-  /*Código para fixar footer no fim da página*/
-  html {
-    height: 100%;
-  }
-  
-  body {
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .container-site {
-    flex: 1;
-  }
-  
-  /*Fim do código para fixar footer no fim da página*/
-  
-  /* ---------------------- FIM FOOTER ---------------------- */
-  
+  /* ---------------------- FIM CONTEÚDO DICAS ---------------------- */
   
   /* ---------------------- INÍCIO CONFIGURAÇÕES RESPONSIVAS ---------------------- */
   
   
   /* Notebook */
   @media (max-width: 1360px) {
-  
-    .logo-btn {
-      margin-left: 150px;
-      width: 400px;
-    }
-  
-    .menu-secoes {
-      font-size: 18px;
-    }
     
     .secao-dicas-box {
       padding: 5px 30px 30px 15px;
@@ -349,11 +200,6 @@
   }
   
   @media (max-width: 1150px) {
-  
-    .logo-btn {
-      margin-left: 100px;
-      width: 380px;
-    }
 
     .secao-dicas-box {
       flex-direction: column;
@@ -376,45 +222,9 @@
   
   }
   
-  @media (max-width: 1050px) {
-  
-    .logo-btn {
-      margin-left: 100px;
-      width: 340px;
-    }
-  
-  }
-  
   /* Netbook */
   
   @media (max-width: 991px) {
-  
-    .container-menu {
-      background-repeat: no-repeat;
-      background-size: 135%;
-      height: 210px;
-    }
-  
-    .logo-btn {
-      margin-left: 200px;
-      padding-top: 50px;
-      width: 300px;
-    }
-  
-    .menu-mobile-background {
-      background-color: #c06378;
-    }
-  
-    .navbar-toggler {
-      font-size: 1.5rem;
-      background-color: #8b4e5e;
-      margin-right: 40px;
-    }
-    
-    .navbar-expand-lg .navbar-nav .nav-link {
-      padding-right: 2.8rem;
-      padding-left: .8rem;
-    }
 
     .container-conteudo{
       margin-top: 0;
@@ -426,11 +236,6 @@
   
   
   @media (max-width: 850px) {
-  
-    .container-menu {
-      background-size: 150%;
-      background-position-x: right;
-    }
   
     .secao-conteudo {
       flex-direction: column;
@@ -453,21 +258,6 @@
   }
   
   @media (max-width: 770px) {
-  
-    .container-menu {
-      background-size: 170%;
-      background-position-x: right;
-    }
-  
-    .logo-btn {
-      display: none;
-    }
-  
-    .logo-btn-mobile {
-      display: block;
-      width: 100px;
-      margin-left: -134px;
-    }
 
     .secao-dicas {
       align-items: center;
@@ -510,16 +300,6 @@
   /* Mobile  */
   
   @media (max-width: 680px) {
-  
-    .container-menu {
-      background-size: 205%;
-      background-position-x: center;
-    }
-  
-    .container-footer {
-      align-items: center;
-      flex-direction: column;
-    }
 
     .secao-conteudo-imagem {
       max-width: 65%;
@@ -528,16 +308,7 @@
     .secao-dicas {
       padding: 50px 40px 0px 40px;
     }
-  
-    .footer-midias {
-      padding-top: 100px;
-      margin-left: 0;
-    }
-  
-    .creditos {
-      padding-right: 0;
-      padding-top: 40px;
-    }
+
   }
 
   @media (max-width: 520px) {

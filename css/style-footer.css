@@ -1,0 +1,133 @@
+/* ---------------------- INÍCIO FOOTER ---------------------- */
+
+
+/*Footer*/
+.container-footer {
+    background: url("../img/Retângulo_footer.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /*Footer_Midias*/
+  .footer-midias {
+    color: #f1b8c6;
+    float: left;
+    padding-top: 130px;
+    margin-left: 100px;
+    font-size: 20px;
+    text-align: end;
+  }
+  
+  .fa-envelope,
+  .fa-facebook,
+  .fa-instagram,
+  .fa-youtube {
+    color:  #f1b8c6;
+    padding: 0 20px 0 0;
+  }
+  
+  .fa-facebook:hover,
+  .fa-instagram:hover,
+  .fa-youtube:hover,
+  .fa-envelope:hover {
+    color: #f1b8c6;
+    text-shadow: 0 0 8px #f1b8c6;
+    transition: all 0.4s ease;
+  }
+  
+  /*Footer Créditos*/
+  .creditos {
+    color: #f1b8c6;
+    padding-top: 130px;
+    padding-right: 20px;
+    text-align: end;
+    padding-bottom: 20px;
+  }
+  
+  .creditos a:link,
+  .creditos a:visited {
+    color:  #f1b8c6;
+    text-decoration: none;
+  }
+  
+  .creditos a:hover {
+    color:  #f0d7dd;
+  }
+  
+  .creditos-desc {
+    padding: 20px;
+  }
+  
+  .creditos-desc li {
+    list-style: none;
+  }
+  
+  .creditos-desc a {
+    color: #f1b8c6;
+    text-decoration: none;
+  }
+  
+  .creditos-desc a:hover{
+    color: #8b4e5e;
+    font-style: italic;
+  }
+
+  .modal-header {
+    color: #c06378;
+    font-family: "Nunito", sans-serif;
+  }
+
+ .modal-title {
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+  }
+
+  .modal-body {
+    background-color: #c06378;
+    color: #faf1f3;
+  }
+  
+  /*Código para fixar footer no fim da página*/
+  html {
+    height: 100%;
+  }
+  
+  body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .container-site {
+    flex: 1;
+  }
+  
+  /*Fim do código para fixar footer no fim da página*/
+  
+  /* ---------------------- FIM FOOTER ---------------------- */
+
+  /* ---------------------- INÍCIO CONFIGURAÇÕES RESPONSIVAS ---------------------- */
+
+  /* Mobile  */
+  
+  @media (max-width: 680px) {
+  
+    .container-footer {
+      align-items: center;
+      flex-direction: column;
+    }
+  
+    .footer-midias {
+      padding-top: 100px;
+      margin-left: 0;
+    }
+  
+    .creditos {
+      padding-right: 0;
+      padding-top: 40px;
+    }
+  }
+  

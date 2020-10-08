@@ -14,6 +14,8 @@
 
     <!---CSS-->
     <link rel="stylesheet" href="css/style-patrocine.css"/>
+    <link rel="stylesheet" href="css/style-menu.css"/>
+    <link rel="stylesheet" href="css/style-footer.css"/>
 
     <!-- Fontes -->
     <link
@@ -47,7 +49,7 @@
          
         <!--Menu principal (com configurações Boostrap)-->
         
-        <header class="container-menu fundo-inicio  ">
+        <header class="container-menu">
           
           <nav id="nav-nav" class="navbar navbar-expand-lg navbar-dark menu-mobile-background">
             
@@ -55,7 +57,7 @@
             <a href="#"><img class="logo-btn" src="./img/logo-empreendelas-branca.png" alt="Logo"></a>
             
             <!-- Logo mobile -->
-            <a href="#"><img class="logo-btn-mobile" src="./img/logo-mobile.png" alt="Logo"></a>
+            <a href="/index.html"><img class="logo-btn-mobile" src="./img/logo-mobile.png" alt="Logo"></a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
@@ -67,27 +69,27 @@
                 <ul class="navbar-nav">
 
                     <li class="nav-item">
-                        <a class="nav-link menu-secoes" href="#">Home</a>
+                        <a class="nav-link menu-secoes" href="./index.html">Home</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link menu-secoes" href="#">Sobre</a>
+                        <a class="nav-link menu-secoes" href="./sobre.html">Sobre</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link menu-secoes" href="#">Empreendedoras</a>
+                        <a class="nav-link menu-secoes" href="./empreendedoras.html">Empreendedoras</a>
                     </li>
 
                     <li class="nav-item">
-                      <a class="nav-link menu-secoes" href="#">Podcast</a>
+                      <a class="nav-link menu-secoes" href="./podcast.html">Podcast</a>
                     </li>
 
                     <li class="nav-item">
-                      <a class="nav-link menu-secoes" href="#">Apoie</a>
+                      <a class="nav-link menu-secoes" href="./patrocine.html">Apoie</a>
                     </li>
 
                     <li class="nav-item">
-                      <a class="nav-link menu-secoes" href="#">Dicas</a>
+                      <a class="nav-link menu-secoes" href="./dicas.html">Dicas</a>
                     </li>
 
                 </ul>
@@ -95,7 +97,7 @@
             </div>
           
           </nav>
-          
+
         </header>
       
         <!-- Conteúdo da Patrocine secao-conteudo-patrocine-->
@@ -258,28 +260,71 @@
           </section>
         </section>
 
-        <!-- Footer -->
-       
-        <footer class="container-footer  ">
+      <!-- Footer -->
 
-          <div class="footer-midias ">
+      <footer class="container-footer">
 
-            <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
-            <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
-            <a href="#"><i class="fab fa-youtube fa-lg"></i></a>
-            <a href="#"><i class="fa fa-envelope fa-lg"></i></a>
+        <div class="footer-midias">
 
-          </div>
-          
-          <div class="creditos">
-            <a href="#"><p>© Créditos</p></a>
-          </div>
+          <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
+          <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+          <a href="#"><i class="fab fa-youtube fa-lg"></i></a>
+          <a href="#"><i class="fa fa-envelope fa-lg"></i></a>
 
-        </footer>
-      
+        </div>
+        
+        <div class="creditos">
+          <a href="#" data-toggle="modal" data-target="#ModalCreditos"><p>© Créditos</p></a>
+        </div>
 
-      
+            <!--Modal dos Créditos-->
+            <div class="modal fade" id="ModalCreditos" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="TituloModalCentralizado">Quem somos?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
 
+                  <div class="modal-body">
+              
+                    <div class="creditos-desc">
+                      <p><b>Esse site foi desenvolvido durante o curso de Front-end ofertado pela <a href="https://www.digitalhouse.com/br/" target="_blank">Digital House</a>, em parceria com Estação Hack, do Facebook. Suas desenvolvedoras são:</b></p>
+                      <ul>
+                        
+                        <a href="https://www.linkedin.com/in/aline-santos-34270b181/" target="_blank">
+                          <li>Aline Santos</li>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/leidianecampos/" target="_blank">
+                          <li>Leidiane Campos</li>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/mayara-veloso-lima-2111b81ab/" target="_blank">
+                          <li>Mayara Lima</li>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/natallip/" target="_blank">
+                          <li>Natalli Paiva</li>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/priscila-netto/" target="_blank">
+                          <li>Priscila Netto</li>
+                        </a>
+
+                      </ul>
+                    </div>
+        
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!-- Fim do modal -->          
+
+    </footer>
 
     <!-- Scripts JS Bootstrap-->
 

@@ -1,0 +1,154 @@
+/* ---------------------- INÍCIO HEADER (Menu) ---------------------- */
+
+/*Container menu*/
+.container-menu {
+    background: url("../img/barra-menu-horizontal.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 190px;
+  }
+  
+  /*Logo EmpreendElas*/
+  .logo-btn {
+    margin-left: 100px;
+    padding-top: 50px;
+    width: 480px;
+    opacity: .8;
+  }
+  
+  .logo-btn-mobile {
+    display: none;
+  }
+  
+  /*Itens_Menu*/
+  
+  .menu-secoes {
+    font-family: "Nunito", sans-serif;
+    color: white;
+    font-size: 20px;
+    text-align: right;
+  }
+  
+  .menu-secoes a:visited {
+    color: white;
+  }
+  
+  /*Efeito_Menu*/
+  .menu-secoes:hover {
+    padding-top: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  /* ---------------------- FIM HEADER (Menu) ---------------------- */
+
+  
+  /* ---------------------- INÍCIO CONFIGURAÇÕES RESPONSIVAS ---------------------- */
+
+
+/* Notebook */
+@media (max-width: 1360px) {
+  
+    .logo-btn {
+      margin-left: 150px;
+      width: 400px;
+    }
+  
+    .menu-secoes {
+      font-size: 18px;
+    }
+  
+  }
+  
+  @media (max-width: 1150px) {
+  
+    .logo-btn {
+      margin-left: 100px;
+      width: 380px;
+    }
+  
+  }
+  
+  @media (max-width: 1050px) {
+  
+    .logo-btn {
+      margin-left: 100px;
+      width: 340px;
+    }
+  
+  }
+  
+  /* Netbook */
+  
+  @media (max-width: 991px) {
+  
+    .container-menu {
+      background-repeat: no-repeat;
+      background-size: 135%;
+      height: 300px;
+    }
+  
+    .logo-btn {
+      margin-left: 200px;
+      padding-top: 50px;
+      width: 300px;
+    }
+  
+    .menu-mobile-background {
+      background-color: #c06378;
+    }
+  
+    .navbar-toggler {
+      font-size: 1.5rem;
+      background-color: #8b4e5e;
+      margin-right: 40px;
+    }
+    
+    .navbar-expand-lg .navbar-nav .nav-link {
+      padding-right: 2.8rem;
+      padding-left: .8rem;
+    }
+  
+  }
+  
+  /* Tablet */
+  
+  
+  @media (max-width: 850px) {
+  
+    .container-menu {
+      background-size: 150%;
+      background-position-x: right;
+    }
+  
+  }
+  
+  @media (max-width: 770px) {
+  
+    .container-menu {
+      background-size: 170%;
+      background-position-x: right;
+    }
+  
+    .logo-btn {
+      display: none;
+    }
+  
+    .logo-btn-mobile {
+      display: block;
+      width: 100px;
+      margin-left: -134px;
+    }
+  
+  }
+  
+  /* Mobile  */
+  
+  @media (max-width: 680px) {
+  
+    .container-menu {
+      background-size: 205%;
+      background-position-x: center;
+    }
+  
+  }
+  
