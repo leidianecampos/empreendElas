@@ -56,7 +56,7 @@
   /* ---------------------- FIM HEADER (Menu) ---------------------- */
   
   
-  /* ---------------------- INÍCIO CONTEÚDO HOME ---------------------- */
+  /* ---------------------- INÍCIO CONTEÚDO EMPREENDEDORAS ---------------------- */
   
   
   /*Container Conteúdo*/
@@ -228,13 +228,64 @@
     font-size: 16px;
   }
 
-  .secao-empreedoras-depoimento-desc {
-    color: #5B5B5B;
-    font-weight: 400;
-    font-size: 14px;
+  .modal-header {
+    color: #c06378;
+    font-family: "Nunito", sans-serif;
   }
 
-  /* ---------------------- FIM CONTEÚDO HOME ---------------------- */
+  .modal-title {
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+  }
+
+  .modal-body {
+    background-color: #c06378;
+  }
+
+  .secao-empreedoras-depoimento-desc {
+    color: #faf1f3;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 30px;
+  }
+
+  .secao-empreedoras-depoimento-desc a {
+    color: #663845;
+    text-decoration: none;
+  }
+
+  .secao-empreendedoras-depoimento-cabecalho {
+    display: flex;
+    max-width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+
+  .secao-empreendedoras-depoimento-cabecalho-titulo {
+    max-width: 50%;
+    padding-right: 30px;
+    text-align: right;
+  }
+
+  .secao-empreendedoras-depoimento-cabecalho-titulo h2 {
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .secao-empreendedoras-depoimento-cabecalho-img {
+    max-width: 50%;
+  }
+
+  .secao-empreendedoras-depoimento-cabecalho-img img{
+    max-width: 100%;
+    box-shadow: 16px 16px #f0d7dd;
+  }
+
+  /* ---------------------- FIM CONTEÚDO EMPREENDEDORAS ---------------------- */
   
   
   /* ---------------------- INÍCIO FOOTER ---------------------- */
