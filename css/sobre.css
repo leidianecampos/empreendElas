@@ -1,13 +1,17 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
-  background-image: none;
-
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: rgb(53, 53, 53);
+  background-color: #F2F2F2;
 }
+
+/* ---------------------- INÍCIO CONTEÚDO SOBRE ---------------------- */
 
 .container-historia {
   background-image: linear-gradient(
@@ -86,6 +90,10 @@ iframe{
   margin-left: auto;
   margin-right: auto;
 }
+
+/* ---------------------- FIM CONTEÚDO SOBRE ---------------------- */
+
+/* ---------------------- INÍCIO CONFIGURAÇÕES RESPONSIVAS ---------------------- */
 
 /*mobile */
 
@@ -170,7 +178,6 @@ iframe{
     text-indent: 1em;
     text-align: left;
   }
-
 
 
   /*container-evento*/
