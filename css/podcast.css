@@ -94,14 +94,13 @@ body {
 }
 
 .container-videos{
-  background-color: rgba(169, 155, 159, 0.5);
-  flex-direction: column;
   display: flex;
-  justify-content: center;
+  flex-direction: column;    
   align-items: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  border-radius: 5em;
+  padding: 0px 20px 30px 20px;  
+  border-radius: 5em;  
+  background-color: rgba(102, 56, 69, 0.3);
+  padding-top: 50px;
 }
 
 #play{
@@ -115,38 +114,42 @@ body {
   text-transform: uppercase;   
 }
 
-.podcast-videos{
-  display: flex;  
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 20px;
-  padding-top: 20px;      
+.carrossel {  
+  width: 800px;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+  bottom: 0;
+  border-radius: 50px;
+  margin-bottom: 20px;  
 }
+
+.conteiner-slider{
+  height: 600px;
+}
+
 
 .div-podcast{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(192, 99, 120, 0.3);  
-  margin-bottom: 30px; 
-  width: 600px;
+  background-color: rgba(192, 99, 120, 0.3);
   height: 600px;
-  border-radius: 50px;   
+  width: 800px;     
 }
 
 .div-podcast h1{
-  padding: 40px 15px 25px 15px;    
-  font-size: 18px;
+  padding: 45px 60px 25px 60px;    
+  font-size: 20px;
   text-align: center;
   font-family: "Roboto", sans-serif;
 }
 
 
 .div-podcast p{
-  font-size: 16px;
-  padding: 20px 70px 20px 70px;
+  font-size: 18px;
+  padding: 30px 100px 20px 100px;
   text-align: justify;
   font-family: "Roboto", sans-serif;     
 }
@@ -154,6 +157,11 @@ body {
 .div-podcast iframe{
   width:460px;
   height:240px;
+}
+
+.div-podcast a{
+  color:rgb(53, 53, 53);
+  font-weight: bold;
 }
 
 .link-canal a{
@@ -176,10 +184,137 @@ body {
   transition: all 0.4s ease;
 }
 
+
 /*Texto*/
 
 
 /* ---------------------- FIM CONTEÚDO PODCAST ---------------------- */
+
+/* ---------------------- INÍCIO CONTEÚDO SLIDER ---------------------- */
+.trs {
+  -webkit-transition:all ease-out 0.5s;
+  -moz-transition:all ease-out 0.5s;
+  -o-transition:all ease-out 0.5s;
+  -ms-transition:all ease-out 0.5s;
+  transition:all ease-out 0.5s;
+} 
+
+#slider {
+  position: relative;
+  z-index: 1;     
+}
+
+.conteiner-slider { 
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  filter:alpha(opacity=0);
+}
+
+.ativo {
+  opacity: 1!important;
+  filter:alpha(opacity=100)!important;
+}
+
+/*controladores*/
+.carrossel span {
+  background:rgb(192, 99, 120);
+  cursor: pointer; 
+  opacity: 0;
+  filter:alpha(opacity=0); 
+  position: absolute; 
+  bottom: 40%; 
+  width: 43px; 
+  height: 43px; 
+  z-index: 5;
+}
+
+.next {
+  right: 15px;  
+}
+
+.next:before,.next:after {
+  left: 21px;
+}
+
+.next:before {
+  -webkit-transform: rotate(132deg);
+  top: 5px;
+}
+
+.next:after {
+  -webkit-transform: rotate(42deg);
+  top: 19px;
+}
+
+.next:before,.next:after,.prev:before,.prev:after {
+  content: "";
+  height: 20px;
+  background: #fff;
+  width: 1px;
+  position: absolute;
+}
+
+.prev {
+  left: 15px;
+}
+
+.prev:before,.prev:after {
+  left: 18px;
+}
+
+.prev:before {
+  -webkit-transform: rotate(42deg);
+  top: 5px;
+}
+.prev:after {
+  -webkit-transform: rotate(132deg);
+  top: 19px;
+}
+
+.carrossel span {
+  opacity: 0.76;
+  filter:alpha(opacity=76);
+}
+
+
+/*-----------------------Modal--------------------*/
+.modal-contato {
+  background-color: #c06378;
+  color: #faf1f3;
+  display: flex;  
+}
+
+.enviar{
+  background-color:#c06378!important ;
+  border-color: #c06378!important;
+}
+.enviar:hover{
+  background-color: #E894A7!important;
+  border-color: #E894A7!important;
+}
+
+.resposta{
+  text-align: center;
+}
+
+.contato {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.contato a{
+  color:rgb(53, 53, 53);
+  
+}
+
+.contato a:hover{
+  text-decoration: none;
+}
+
+
+
 
 
 /* ---------------------- INÍCIO CONFIGURAÇÕES RESPONSIVAS ---------------------- */
@@ -204,10 +339,16 @@ body {
 
 @media (max-width: 991px) {
 
+  .container-menu {    
+    height: 200px;
+  }
+
   .secao-conteudo {
     margin-top: -100px; 
     max-width: 30%;
   }
+
+ 
 
 }
 
@@ -232,7 +373,29 @@ body {
 
   .descricao{
     text-align: center;
-  } 
+  }
+  
+  .carrossel{
+    width: 600px;
+  }
+
+  .conteiner-slider{
+    width: 600px;
+  }
+
+  .div-podcast{
+    width: 600px;
+  }
+
+  .div-podcast h1{
+    font-size: 18px;
+  }
+
+  .div-podcast p{
+    font-size: 16px;
+    padding: 20px 70px 20px 70px;
+  }
+
 
 }
 
@@ -262,7 +425,8 @@ body {
   .texto-podcast strong{
     color: #c06378;
     font-weight: 700;
-  }
+  } 
+
   
 }
 
@@ -278,19 +442,105 @@ body {
     max-width: 80%;
   }
 
-  .div-podcast{
-    width: auto;
-    height: auto;
-    margin: 0 10px 20px 10px;    
+  .div-podcast iframe{
+    width: 368px;
+    height: 192px;
   }
 
-  .texto-chamada{
-    font-size: 20px;
-    margin:0;
+  .carrossel{     
+    width: 100%;
+    height: 700px;
   }
+
+  .conteiner-slider{
+    width: 100%;
+    height: 700px;
+  }
+
+  .div-podcast{
+    width: 100%;
+    height: 700px;
+  }
+
+  .div-podcast h1{
+    padding-top: 0;
+  }
+
+  .next{   
+    -webkit-transform: rotate(90deg);
+    top:89%; 
+    bottom: 0;
+    left: 47%;
+    right: 0;
+    height: 100px!important;
+    width: 30px!important;    
+  }
+
+  .prev{
+    -webkit-transform: rotate(90deg);
+    top:-20px; 
+    bottom: 0;
+    right:0;
+    left: 47%;
+    height: 100px!important;
+    width: 30px!important;    
+  }
+
+  .next:before,.next:after {
+    left: 15px;
+  }
+  
+  .next:before {   
+    top: 33px;
+  }
+  
+  .next:after {    
+    top: 47px;
+  }
+ 
+
+  .prev:before,.prev:after {
+    left: 15px;
+  }
+
+  .prev:before {   
+    top: 33px;
+  }
+
+  .prev:after {    
+    top: 47px;
+  }
+ 
+}
+
+@media (max-width: 530px) {
+  .carrossel{     
+    height: 750px;
+  }
+
+  .conteiner-slider{
+    height: 750px;
+  }
+
+  .div-podcast{
+    height: 800px;
+  }
+
+  .div-podcast h1{
+    padding-bottom: 5px;
+  }
+
+  .div-podcast p{
+    padding-top: 10px;
+  }
+  
 }
 
 @media (max-width: 440px) {
+
+  .container-menu{
+    height: 150px;
+  }
 
   .info-podcast{    
     display: flex;
@@ -314,23 +564,10 @@ body {
     margin: 0;
     padding-top: 25px;
   }
-
-  .podcast-videos{
-    display: flex;
-    flex-direction: column; 
-    margin-bottom: 10px;
-    padding-top: 10px;
-          
-  }
-
-  .div-podcast{
-    width: auto;
-    height: auto;
-    margin: 0 10px 20px 10px;    
-  }
+ 
 
   .div-podcast h1{
-    padding: 30px 15px 15px 15px;    
+    padding: 0px 15px 15px 15px;    
     font-size: 18px;
     text-align: center;
   }
@@ -350,7 +587,7 @@ body {
 
   .link-canal{
     margin-top: 0;
-  }
+  }  
 
 }
 
@@ -358,4 +595,13 @@ body {
   .texto-chamada{
     font-size: 15px;
   }
+
+  .div-podcast h1{
+    font-size: 16px;
+  }
+
+  .div-podcast p{
+    font-size: 14px;
+  }
+  
 }
