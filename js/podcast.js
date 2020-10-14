@@ -48,7 +48,7 @@ async function funcaoApiYoutube(){
         <div class="div-podcast">
           <h1 >#EP12 - REAFIRMANDO A SUA EXISTÊNCIA!</h1>
           <iframe src="https://www.youtube.com/embed/uFvNGr0LMVw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <p><strong>Preta Lopes</strong> que é a nossa voz feminina no #EP12. Ela é atriz e fundadora da Transborda: uma startup da diversidade. Estudou gênero e arte no mestrado da UNESP. Ser transexual é para ela o ato mais revolucionário que seu corpo pode exercer. Anda de bicicleta aos domingos, é tutora de um gatinho preto e gosta de ouvir histórias de pessoas por aí a fora! </p>
+          <p><strong>Greta Lopes</strong> que é a nossa voz feminina no #EP12. Ela é atriz e fundadora da Transborda: uma startup da diversidade. Estudou gênero e arte no mestrado da UNESP. Ser transexual é para ela o ato mais revolucionário que seu corpo pode exercer. Anda de bicicleta aos domingos, é tutora de um gatinho preto e gosta de ouvir histórias de pessoas por aí a fora! </p>
         </div>
       </div>`
         
@@ -58,7 +58,7 @@ async function funcaoApiYoutube(){
         let arrayDescricao = ["<strong>Yara de Oliveira Rosa</strong> é Yalorixá, vem de uma família tradicional do Candomblé Efon, sendo uma das casas mais antigas da cidade de São Paulo. Iniciada há mais de 25 anos na tradição yorubá, pertence a terceira geração de orientadores espirituais tendo mais de 20 anos de estudos deste oráculo tradicional. ",
             "Recebemos no #EP14 a <strong>Luciana Hellu</strong>, conhecida também como a Cigana Eva. Ela se reconhece como médium e sensitiva desde que nasceu e há muito tempo desenvolve trabalho de orientação e auxílio para as pessoas que a procuram. Em sua atuação, Luciana Hellu faz questão de esclarecer que seu trabalho é profundamente marcado pelo respeito e carinho ao ser humano e tem ajudado as pessoas a esclarecerem suas dúvidas e alcançarem o sucesso em várias áreas da vida.",
             "No #EP13 você vai poder escutar e conhecer um pouco mais dessa voz potente, que é a <strong>Juliana Santos</strong>, mulher negra, mãe, escritora, jongueira, integrante fundadora do CineBecos e Coletivo Sete Visões, graduada em Letras e em Pedagogia, atua como professora de português, estuda a educação antroposófica, presta serviços como assessora pedagógica, traz em seu corpo a dança e a percussão como caminho para a educação e seu devir.",
-            "<strong>Preta Lopes</strong> que é a nossa voz feminina no #EP12. Ela é atriz e fundadora da Transborda: uma startup da diversidade. Estudou gênero e arte no mestrado da UNESP. Ser transexual é para ela o ato mais revolucionário que seu corpo pode exercer. Anda de bicicleta aos domingos, é tutora de um gatinho preto e gosta de ouvir histórias de pessoas por aí a fora!",
+            "<strong>Greta Lopes</strong> que é a nossa voz feminina no #EP12. Ela é atriz e fundadora da Transborda: uma startup da diversidade. Estudou gênero e arte no mestrado da UNESP. Ser transexual é para ela o ato mais revolucionário que seu corpo pode exercer. Anda de bicicleta aos domingos, é tutora de um gatinho preto e gosta de ouvir histórias de pessoas por aí a fora!",
             ]
         
         for(let i=0; i < videos.items.length; i++){
