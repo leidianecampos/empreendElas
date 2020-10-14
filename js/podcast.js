@@ -48,7 +48,7 @@ async function funcaoApiYoutube(){
         <div class="div-podcast">
           <h1 >#EP12 - REAFIRMANDO A SUA EXISTÊNCIA!</h1>
           <iframe src="https://www.youtube.com/embed/uFvNGr0LMVw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <p><strong>Preta Lopes</strong> que é a nossa voz feminina no #EP12. Ela é atriz e fundadora da Transborda: uma startup da diversidade. Estudou gênero e arte no mestrado da UNESP. Ser transexual é para ela o ato mais revolucionário que seu corpo pode exercer. Anda de bicicleta aos domingos, é tutora de um gatinho preto e gosta de ouvir histórias de pessoas por aí a fora! </p>
+          <p><strong>Greta Lopes</strong> que é a nossa voz feminina no #EP12. Ela é atriz e fundadora da Transborda: uma startup da diversidade. Estudou gênero e arte no mestrado da UNESP. Ser transexual é para ela o ato mais revolucionário que seu corpo pode exercer. Anda de bicicleta aos domingos, é tutora de um gatinho preto e gosta de ouvir histórias de pessoas por aí a fora! </p>
         </div>
       </div>`
         
