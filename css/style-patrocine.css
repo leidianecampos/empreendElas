@@ -25,6 +25,7 @@ body {
   text-shadow: none;
 }
 
+/*Botões*/
 .secao-conteudo-botao a {
   color: #FFFFFF;
   font-family: "Nunito", sans-serif;
@@ -43,7 +44,7 @@ body {
   transition: all 0.4s ease;
 }
 
-/*Botões*/
+
 .botao a{
   background: #E894A7;
   border-radius: 25px;
@@ -185,8 +186,6 @@ h4{
   background-position: bottom left ;
 }
 
-
-
 /*Formulário - modal*/
 
 .modal-contato {
@@ -199,6 +198,7 @@ h4{
   background-color:#c06378!important ;
   border-color: #c06378!important;
 }
+
 .enviar:hover{
   background-color: #E894A7!important;
   border-color: #E894A7!important;
@@ -246,15 +246,12 @@ h4{
   .secao-conteudo {
     max-width: 50%;
   }
-
- 
 }
 
 @media (max-width: 1050px) {
   .container-menu {
     background-repeat: no-repeat;
-    background-size: 135%;
-  
+    background-size: 135%; 
 }
 
    /*Aba Patrocine*/
@@ -265,13 +262,10 @@ h4{
   .tamanho-tela{
     height: 100%;
   }
- /*Aba Patrocine*/
+
  .tamanhoFonte{
   font-size: 24px;
  }
-  
-  
-
 }
 
 /* Netbook */
@@ -293,11 +287,7 @@ h4{
  html,body{
   font-size: 16px;
   }
-
- 
-
 }
-
 
 /* Tablet */
 
@@ -316,6 +306,9 @@ h4{
     max-width: 56%;
   }
 
+  .p-md-2 {
+    padding: .6rem!important;
+}
   
 
 }
@@ -324,10 +317,7 @@ h4{
  /*Aba Patrocine*/
   .container-menu {
     background-repeat: no-repeat;
-    background-size: 170%;
-     
-
- 
+    background-size: 170%
  
 }
 
@@ -335,6 +325,14 @@ h4{
 /*arrumar*/
 
 @media (max-width: 680px) {
+  .container-menu {
+    background-repeat: no-repeat;
+    background-size: 170%
+}
+
+.container-conteudo {
+  height: 80vh;
+}
 
   body {
   
@@ -354,20 +352,173 @@ h4{
  html,body{
   font-size: 14px;
   }
+
+ 
+/*Posição imagem perfil*/
+  .mudarPosicao{
+  margin-left:12.8em;
+  margin-right: auto;
+  }
+
+  .mudarPosicao figure{
+    margin:1em 0;
+    margin-left: 12px;
+  }
+
+  /*Titulo empresa*/
+  .centralizar{
+    text-align: center!important;
+  }
+
+  .secao-conteudo-textos{
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 530px) {
- 
+  .container-menu {
+    background-repeat: no-repeat;
+    background-size: 200%
+}
+
+  .mudarPosicao{
+    margin-left:8em;
+    margin-right: auto;
+    }
+  
+    .mudarPosicao figure{
+      
+      margin:1em 0;
+      margin-left: 12px;
+    }
+  
+    /*Titulo empresa*/
+    .centralizar{
+      text-align: center!important;
+    }
+
+    /*Caixa final*/
+    .margem{
+      margin-top: 3rem!important;
+    }
   
 }
 
 @media (max-width: 440px) {
-
   
+  .mudarPosicao{
+    margin-left:3em;
+    margin-right: auto;
+    }
+  
+    /*Titulo empresa*/
+    .centralizar{
+      text-align: center!important;
+    }
 
+    /*Páragrafo inicial*/
+    .padding{
+      padding-top: 15em;
+    }
+
+    /*Textos*/
+    .padding-M{
+      padding-left: 1em;
+      padding-right: 2em;
+
+      margin-left: 1em;
+      margin-right: 1em;
+    }
+
+    .botao a {
+      padding-top: 7px!important;
+      padding-right: 2.7px!important;
+      padding-bottom: 7px!important;
+      padding-left: 2.7px!important;
+    }
+
+ 
 }
 
 @media (max-width: 350px) {
- 
+  .mudarPosicao{
+    margin-left:2em;
+    margin-right: auto;
+    }
+
+    /* Titulo empresa */
+    .centralizar{
+      text-align: center!important;
+    }
+
+    .secao-conteudo-textos{
+     text-align: justify;
+    }
+
+    .mx-4 {
+      margin-left: 0rem!important;
+      margin-right: 0rem!important;
+  }
+
+  .botao a {
+    padding-top: 7px!important;
+    padding-right: 2.7px!important;
+    padding-bottom: 7px!important;
+    padding-left: 2.7px!important;
+  }
+
+  .ml-2, .mx-2 {
+    margin-left: .0rem!important;
+}
+  .mr-2, .mx-2 {
+    margin-right: .0rem!important;
+  }
+
+  /*POSIÇÃO PERFIL*/
+    .mudarPosicao{
+    margin-left:1em;
+    margin-right:10em;
+    }
   
+    /*Titulo empresa*/
+    .centralizar{
+      text-align: center!important;
+    }
+
+    .icones {
+      display: flex;
+      flex-direction: row;
+    }
+    /*Textos*/
+    .tamanhoFonte{
+      font-size: 20px;
+    }
+
+    .h3, h3 {
+      font-size: 1.50rem;
+  }
+
+  .margem-bloco-final{
+    margin-right: 3rem!important;
+    margin-left: 3rem!important;
+  }
+
+  .subtitulo-patrocine {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color: #c06378;
+    font-size: 35px;
+}
+
+  .padding-sub{
+    padding-left: 21px!important;
+    padding-right: 21px!important;
+    padding-top:21px !important;
+    padding-bottom:21px!important;
+}
+  
+
+
+
+  }
 }
