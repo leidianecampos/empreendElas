@@ -17,24 +17,15 @@ body {
 /* ---------------------- INÍCIO CONTEÚDO PATROCINE ---------------------- */
 
 
- .titulo-principal {
-  font-family: "Nunito", sans-serif;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 90px;
-  color:#c06378;
-  text-shadow: 1.1em.3em 0.1em #92597823;
-  } 
-
 .secao-conteudo-textos {
   font-family: "Nunito", sans-serif;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 28px;
-  color:#5B5B5B;
   text-shadow: none;
 }
 
+/*Botões*/
 .secao-conteudo-botao a {
   color: #FFFFFF;
   font-family: "Nunito", sans-serif;
@@ -54,26 +45,24 @@ body {
 }
 
 
-/*----------------------CONTEÚDO PATROCINE------------------- */
-
-/*Botões*/
-.btn-secondary{
-  background-color: #663845;
-  color: whitesmoke;
-  border-color: #c06378;
-
+.botao a{
+  background: #E894A7;
+  border-radius: 25px;
+  color: #FFFFFF;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  padding: 6px 20px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-.btn-secondary:hover{
-  background-color: #8b4e5e;
-  border-color: #c06378;
- 
-}
-
-.btn-secondary:focus{
-  color: whitesmoke;
-  background-color: #c06378;
- 
+.botao a:hover {
+background-color: darkgray;
+padding: 8px 24px 8px 24px;
+transition: all 0.4s ease;
 }
 
 .alinhar-botao-patrocine{
@@ -103,17 +92,12 @@ width: 180px;
 height: auto;
 }
 
-/*Fundo inicio*/
-/* .secao-conteudo-patrocine{
-  width: 100vw;
-} */
-
 .tamanho-tela{
   height: 100%;
 }
 
 .bloco-patrocine article{
-  margin-left: 15rem!important;
+  margin-left: 2rem!important;
 }
 
 .secao-conteudo-patrocine {
@@ -128,31 +112,33 @@ height: auto;
  .links{
   color:#663845;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 18px;
   
 }
 
 .links:hover{
   color: #c06378;
   text-decoration: none;
-  padding-top: 19px;
-  transition: all 0.9s ease-in-out;
+  padding-top: 50px;
+  transition: all 0.5s ease-in;
 }
 
 .titulo-principal-patrocine {
-  color: #663845;
   font-family: 'Nunito', sans-serif;
-  font-weight: 900;
-  font-size: 3rem;
+
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 90px;
+  color:#c06378;
   padding: 10px 0 15px 0;
   text-shadow: 1.1em.2em 0.1em #92597823;
 }
 
 .subtitulo-patrocine{
   font-family: 'Nunito', sans-serif;
-  font-weight: 900;
-  color: #663845;
-  font-size: 2.7rem;
+  font-weight: 700;
+  color:#c06378;
+  font-size: 40px;
 }
 
 h4{
@@ -161,7 +147,7 @@ h4{
 }
 
 .espaco-patrocine{
-  margin-bottom: 15rem;
+  margin-bottom: 7rem;
 }
 
 
@@ -178,7 +164,7 @@ h4{
 .fundo-inicio {
    background-color: #fcd4dc; 
   
-} 
+}  
 
 .background-patrocine{
   background-image: url(../img/barra-menu-horizontal-patrocine.png);
@@ -200,19 +186,47 @@ h4{
   background-position: bottom left ;
 }
 
+/*Formulário - modal*/
 
-
-
-
-/* Contato 
-.form-control{
-  width: 50%;
-  margin-left: 15em;
+.modal-contato {
+  background-color: #c06378;
+  color: #faf1f3;
+  display: flex;  
 }
 
-input .form-control-margem{
-  margin-left: 2em;
-} */
+.enviar{
+  background-color:#c06378!important ;
+  border-color: #c06378!important;
+}
+
+.enviar:hover{
+  background-color: #E894A7!important;
+  border-color: #E894A7!important;
+}
+
+.resposta{
+  text-align: center;
+}
+
+.contato {
+  padding-top: 1px;
+  text-align: center;
+}
+
+.contato a{
+  color: #663845;
+  font-size: 18px;
+  font-weight: 500;
+  
+}
+
+.contato a:hover{
+  color: #c06378;
+  text-decoration: none;
+}
+
+
+
 
 /* ---------------------- FIM CONTEÚDO PATROCINE ---------------------- */
 
@@ -232,16 +246,13 @@ input .form-control-margem{
   .secao-conteudo {
     max-width: 50%;
   }
-
-  /*Aba Patrocine*/
-  html,body{
-    font-size: 20px;
-  }
-
- 
 }
 
 @media (max-width: 1050px) {
+  .container-menu {
+    background-repeat: no-repeat;
+    background-size: 135%; 
+}
 
    /*Aba Patrocine*/
    html,body{
@@ -251,16 +262,21 @@ input .form-control-margem{
   .tamanho-tela{
     height: 100%;
   }
- /*Aba Patrocine*/
-  html,body{
-    font-size: 18px;
-  }
 
+ .tamanhoFonte{
+  font-size: 24px;
+ }
 }
 
 /* Netbook */
 
 @media (max-width: 991px) {
+
+  .container-menu {
+    background-repeat: no-repeat;
+    background-size: 135%;
+    /* height: 300px; */
+}
 
   .secao-conteudo {
     margin-top: -100px; 
@@ -271,33 +287,52 @@ input .form-control-margem{
  html,body{
   font-size: 16px;
   }
-
 }
-
 
 /* Tablet */
 
 
 @media (max-width: 850px) {
 
+  .container-menu {
+    background-repeat: no-repeat;
+    background-size: 170%;
+    height: 200px;
+    
+}
+
   .secao-conteudo {
     margin-top: -160px;
     max-width: 56%;
   }
 
+  .p-md-2 {
+    padding: .6rem!important;
+}
+  
+
 }
 
 @media (max-width: 770px) {
-
-  /*Aba Patrocine*/
- html,body{
-  font-size: 15px;
-  }
+ /*Aba Patrocine*/
+  .container-menu {
+    background-repeat: no-repeat;
+    background-size: 170%
+ 
 }
 
 /* Mobile  */
+/*arrumar*/
 
 @media (max-width: 680px) {
+  .container-menu {
+    background-repeat: no-repeat;
+    background-size: 170%
+}
+
+.container-conteudo {
+  height: 80vh;
+}
 
   body {
   
@@ -316,5 +351,174 @@ input .form-control-margem{
    /*Aba Patrocine*/
  html,body{
   font-size: 14px;
+  }
+
+ 
+/*Posição imagem perfil*/
+  .mudarPosicao{
+  margin-left:12.8em;
+  margin-right: auto;
+  }
+
+  .mudarPosicao figure{
+    margin:1em 0;
+    margin-left: 12px;
+  }
+
+  /*Titulo empresa*/
+  .centralizar{
+    text-align: center!important;
+  }
+
+  .secao-conteudo-textos{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 530px) {
+  .container-menu {
+    background-repeat: no-repeat;
+    background-size: 200%
+}
+
+  .mudarPosicao{
+    margin-left:8em;
+    margin-right: auto;
+    }
+  
+    .mudarPosicao figure{
+      
+      margin:1em 0;
+      margin-left: 12px;
+    }
+  
+    /*Titulo empresa*/
+    .centralizar{
+      text-align: center!important;
+    }
+
+    /*Caixa final*/
+    .margem{
+      margin-top: 3rem!important;
+    }
+  
+}
+
+@media (max-width: 440px) {
+  
+  .mudarPosicao{
+    margin-left:3em;
+    margin-right: auto;
+    }
+  
+    /*Titulo empresa*/
+    .centralizar{
+      text-align: center!important;
+    }
+
+    /*Páragrafo inicial*/
+    .padding{
+      padding-top: 15em;
+    }
+
+    /*Textos*/
+    .padding-M{
+      padding-left: 1em;
+      padding-right: 2em;
+
+      margin-left: 1em;
+      margin-right: 1em;
+    }
+
+    .botao a {
+      padding-top: 7px!important;
+      padding-right: 2.7px!important;
+      padding-bottom: 7px!important;
+      padding-left: 2.7px!important;
+    }
+
+ 
+}
+
+@media (max-width: 350px) {
+  .mudarPosicao{
+    margin-left:2em;
+    margin-right: auto;
+    }
+
+    /* Titulo empresa */
+    .centralizar{
+      text-align: center!important;
+    }
+
+    .secao-conteudo-textos{
+     text-align: justify;
+    }
+
+    .mx-4 {
+      margin-left: 0rem!important;
+      margin-right: 0rem!important;
+  }
+
+  .botao a {
+    padding-top: 7px!important;
+    padding-right: 2.7px!important;
+    padding-bottom: 7px!important;
+    padding-left: 2.7px!important;
+  }
+
+  .ml-2, .mx-2 {
+    margin-left: .0rem!important;
+}
+  .mr-2, .mx-2 {
+    margin-right: .0rem!important;
+  }
+
+  /*POSIÇÃO PERFIL*/
+    .mudarPosicao{
+    margin-left:1em;
+    margin-right:10em;
+    }
+  
+    /*Titulo empresa*/
+    .centralizar{
+      text-align: center!important;
+    }
+
+    .icones {
+      display: flex;
+      flex-direction: row;
+    }
+    /*Textos*/
+    .tamanhoFonte{
+      font-size: 20px;
+    }
+
+    .h3, h3 {
+      font-size: 1.50rem;
+  }
+
+  .margem-bloco-final{
+    margin-right: 3rem!important;
+    margin-left: 3rem!important;
+  }
+
+  .subtitulo-patrocine {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color: #c06378;
+    font-size: 35px;
+}
+
+  .padding-sub{
+    padding-left: 21px!important;
+    padding-right: 21px!important;
+    padding-top:21px !important;
+    padding-bottom:21px!important;
+}
+  
+
+
+
   }
 }

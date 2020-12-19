@@ -13,8 +13,8 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!---CSS-->
-    <link rel="stylesheet" href="css/podcast.css"/>
     <link rel="stylesheet" href="css/style-menu.css"/>
+    <link rel="stylesheet" href="css/podcast.css"/>
     <link rel="stylesheet" href="css/style-footer.css"/>
 
     <!-- Fontes -->
@@ -129,40 +129,61 @@
           <h1 class="texto-chamada">Últimos Episódios</h1>
           <img src="img/play.svg" alt="simbolo play" id="play">
       </div>
-          <div class="container-videos">
-    
 
-    <div class="podcast-videos">
-      <div class="div-podcast">
-        <h1>#EP14 - COMO OS CIGANOS ESPIRITUAIS AGEM NA VIDA DAS PESSOAS QUE OS PROCURAM!</h1>
-        <iframe src="https://www.youtube.com/embed/7X89YiwtE4Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <p>Recebemos no #EP14 a Luciana Hellu, conhecida também como a Cigana Eva. Ela se reconhece como médium e sensitiva desde que nasceu e há muito tempo desenvolve trabalho de orientação e auxílio para as pessoas que a procuram. Em sua atuação, Luciana Hellu faz questão de esclarecer que seu trabalho é profundamente marcado pelo respeito e carinho ao ser humano e tem ajudado as pessoas a esclarecerem suas dúvidas e alcançarem o sucesso em várias áreas da vida.  </p>
+
+
+    <div class="container-videos">   
+      <div class="podcast-videos">
+      
+      </div>
+        <div class="link-canal">    
+          <a  href="https://www.youtube.com/channel/UCOW_mWDf8QHxGLUSHina6Ew" target="_blank">Visite o canal no Youtube</a>
+        </div>
+        <div class="contato">
+          <a href="#" data-toggle="modal" data-target="#ModalContato"><p>Gostaria de participar do nosso podcast? Contate-nos!</p></a>
+        </div>
     </div>
 
-        <div class="div-podcast">
-            <h1>#EP13 - O CORPO NOS ESPAÇOS DE APRENDIZAGEM!</h1>                
-            <iframe src="https://www.youtube.com/embed/95UOFOzgf4k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
-            <p>No #EP13 você vai poder escutar e conhecer um pouco mais dessa voz potente, que é a Juliana Santos, mulher negra, mãe, escritora, jongueira, integrante fundadora do CineBecos e Coletivo Sete Visões, graduada em Letras e em Pedagogia, atua como professora de português, estuda a educação antroposófica, presta serviços como assessora pedagógica, traz em seu corpo a dança e a percussão como caminho para a educação e seu devir.</p>
-        </div>
 
-        <div class="div-podcast">
-            <h1 >#EP12 - REAFIRMANDO A SUA EXISTÊNCIA!</h1>
-            <iframe src="https://www.youtube.com/embed/uFvNGr0LMVw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p>Preta Lopes que é a nossa voz feminina no #EP12. Ela é atriz e fundadora da Transborda: uma startup da diversidade. Estudou gênero e arte no mestrado da UNESP. Ser transexual é para ela o ato mais revolucionário que seu corpo pode exercer. Anda de bicicleta aos domingos, é tutora de um gatinho preto e gosta de ouvir histórias de pessoas por aí a fora! </p>
-        </div>
+    <!-------modal contato-->    
 
-        <div class="div-podcast">
-            <h1>#EP11 - CULTURA E EDUCAÇÃO: UM SENTIDO DE (RE)EXISTÊNCIA!</h1>
-            <iframe src="https://www.youtube.com/embed/t0txR11KFjI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p>Silvia Tavares é mestre em educação, coordenadora pedagógica, produtora cultural, editora da revista Sampa Mundi e integrante da Escola Feminista Abya Yala. Trabalha e mora na periferia da Zona Sul, entre Campo Limpo e o fundão do Jardim  Ângela, São Paulo. Casada com o Jaime e mãe da Luísa, Beatriz, Pedro e Davi.</p>
-        </div>
+       
+        <div class="modal fade" id="ModalContato" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Contate-nos!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Nome:</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="recipient-email" class="col-form-label">Email:</label>
+                    <input type="email" class="form-control" id="recipient-email">
+                  </div>
+                  <div class="form-group">
+                    <label for="message-text" class="col-form-label">Mensagem:</label>
+                    <textarea class="form-control" id="message-text"></textarea>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary fechar" data-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary enviar">Enviar</button>
+              </div>
+              <div class="resposta"></div>
+            </div>
+          </div>
+        </div>        
 
 
-      </div> 
-      <div class="link-canal">    
-      <a  href="https://www.youtube.com/channel/UCOW_mWDf8QHxGLUSHina6Ew" target="_blank">Visite o canal no Youtube</a>
-      </div> 
-    </div>
+    <!---fim modal contato-->
 
       <!-- Footer -->
 
@@ -229,6 +250,7 @@
             <!-- Fim do modal -->          
 
     </footer>
+    </section>
 
     <!-- Scripts JS Bootstrap-->
 
@@ -244,7 +266,7 @@
 
 
     <!-- Script JS -->
-    <script src="js/script.js"></script>
+    <script src="js/podcast.js"></script>
 
   </body>
 </html>
